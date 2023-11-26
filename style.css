@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1{
+    
+}
+
+#video-container {
+    display:flex;
+}
+
+#video-player {
+    
+    padding: 20px;
+}
+
+#video-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    float:left;
+    padding: 10px;
+   
+    
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.video-thumbnail p {
+    margin-top: 10px;
+}
