@@ -1,45 +1,210 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+* {
+    margin : 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+html {
+    font-size: 10px;
 }
 
-#video-container {
-    display:flex;
+body {
+    font-family: "Roboto","Arial",sans-serif;
 }
-
-#video-player {
-    
-    padding: 20px;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
 }
-
-#video-list {
-    padding: 20px;
+.left-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left-section img{
+    width: 46%;
+    padding-left: 15px;
+}
+.mid-section{
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
+}
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+.mid-section input{
+    width: 100%;
+    border-radius: 3px 0 0  3px;
+    padding: 12px;
+    font-size: 1.5rem;
+   border: 1px solid #d3d3d3;
+   border-right: none;
+}
+.mid-section button{
+    width:63px ;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 3px 3px 0 ;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.mid-section button:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+.mic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+.right-section a{
+    padding-right: 14px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.content-area{
+    height: calc(100vh - 56px);
+    display: flex;
     background-color: #f9f9f9;
 }
-
-.video-thumbnail {
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: block;
-    float:left;
-    padding: 10px;
-   
-    
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
 }
-
-.video-thumbnail img {
+nav{
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px;
 }
+.nav-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+  text-decoration: none;
+}
+.nav-link:hover{
+   background-color: rgb(0, 0 , 0, 0.05); 
+}
+.nav-link span{
+    margin-left: 24px;
+    font-size: 17px;
+    line-height:2em ;
+    font-weight: 500;
+    color: #030303;
+}
+.hou{
+    font-size: 18px;
+    color: black;
+}
+.active{
+    background-color: #e5e5e5;
+}
+#active-span{
+    font-weight: 600;
+}
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0;
+}
+nav p{
+font-size: 1.4em;
+color: #606060;
+font-weight: 700;
+padding: 8px 19px;
+text-transform: uppercase;
+}
+.channel-img{
+   height: 24px;
+   width: 24px;
+   border-radius: 50%; 
+}
+.main{
+    width:100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 2px solid #ddd;
+    overflow-y: auto;
+}
+.videos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-.video-thumbnail p {
-    margin-top: 10px;
+}
+.videoo{
+    width: 330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thubnail{
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px;
+}
+.thubnail img{
+    width: 100%;
+    height: 100%;
+}
+.details{
+    display: flex;
+}
+.photo img{
+height: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 12px;
+}
+.title{
+    display: flex;
+    flex-direction: column; 
+}
+.title a{
+    text-decoration: none;
+}
+.vtitle{
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    max-width: 278px;
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient:vertical;
+}
+.vcreator{
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.vcreator:hover{
+color: black;
+}
+.title span{
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
 }

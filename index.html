@@ -3,32 +3,360 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f9d7c9f38.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>youtube</title>
+    <title>Youtube</title>
 </head>
 
 <body>
     <header>
-        <h1>youtube</h1>
-    </header>
-    <section id="video-container">
+        <div class="left-section">
+            <i class="fa-solid fa-bars"></i>
+            <img src="img/youtube-logo (1).png">
+        </div>
 
-    
-        <div id="video-list">
-           
-            
-            <div class="video-thumbnail" onclick="changeVideo('VIDEO_ID1')">
-               <iframe width="450" height="250" src="video/O MAIOR 0TÁRIO DA HISTÓRIA DA LIVE KKKKKKK   Cortes Do Ninja.mp4" alt="Video 1"  frameborder="0" ></iframe>
-                <p>ninja humilhando</p>
-            </div>
-            <div class="video-thumbnail" onclick="changeVideo('VIDEO_ID2')">
-             <iframe width="450"  height="250"   src="video/O MAIOR 0TÁRIO DA HISTÓRIA DA LIVE KKKKKKK   Cortes Do Ninja.mp4" frameborder="0"></iframe>
-                <p>Video 2</p>
+        <div class="mid-section">
+
+            <form action="">
+                <input type="text" placeholder="search">
+                <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="mic"> <i class="fa-solid fa-microphone "></i></div>
+
+        </div>
+
+        <div class="right-section">
+            <a href=""> <i class="fa-solid fa-video"></i> </a>
+            <a href=""> <i class="fa-solid fa-bars"></i> </a>
+            <a href=""> <i class="fa-solid fa-bell"></i> </a>
+            <a href=""> <i class="fa-solid fa-user"></i> </a>
+        </div>
+    </header>
+
+    <div class="content-area">
+        <aside>
+            <nav>
+                <a href="" class="nav-link active">
+                    <div class="hou"><i class="fa-solid fa-house"></i></div>
+                    <span id="active-span"> Home</span>
+                </a>
+
+                <a href="" class="nav-link ">
+                    <div class="hou"><i class="fa-solid fa-compass"></i></div>
+                    <span> EXPLORE</span>
+                </a>
+
+                <a href="" class="nav-link ">
+                    <div class="hou"> <i class="fa-solid fa-tv"></i> </div>
+                    <span> Subscription</span>
+                </a>
+
+
+                <a href="" class="nav-link ">
+                    <div class="hou"> <i class="fa-solid fa-music"></i> </div>
+                    <span> Originals </span>
+                </a>
+
+
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <span> Youtube Music</span>
+                </a>
+                <hr>
+
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <span> Library </span>
+                </a>
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <span> History</span>
+                </a>
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <span> Your Video</span>
+                </a>
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <span> watch Later</span>
+                </a>
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <span> Download </span>
+                </a>
+
+                </a>
+                <a href="" class="nav-link ">
+                    <div class="hou">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <span> Liked video </span>
+                </a>
+                <hr>
+                <p>Subscription</p>
+                <a href="" class="nav-link ">
+                    <img class="channel-img" src="img/Captura de tela 2023-09-18 032339.png" alt="">
+                    <span>igor </span>
+                </a>
+                <a href="" class="nav-link ">
+                    <img class="channel-img" src="img/Captura de tela 2023-09-18 032339.png" alt="">
+                    <span> gamer dev </span>
+                </a>
+                <a href="" class="nav-link ">
+                    <img class="channel-img" src="img/Captura de tela 2023-09-18 032339.png" alt="">
+                    <span> lkc01</span>
+                </a>
+                <a href="" class="nav-link ">
+                    <img class="channel-img" src="img/Captura de tela 2023-09-18 032339.png" alt="">
+                    <span> sla </span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="main">
+
+            <div class="videos-container">
+
+
+
+
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videoo">
+                    <div class="thubnail">
+                        <img src="img/black .png">
+                    </div>
+                    <div class="details">
+                        <div class="photo">
+                            <img src="img/Captura de tela 2023-09-18 032339.png">
+
+                        </div>
+                        <div class="title">
+                            <a href="" class="vtitle">
+                                igor e zica 
+
+
+                            </a>
+                            <a href="" class="vcreator">
+                             canal tlgd
+                            </a>
+                            <span> 13M views . 3 Month Ago </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <script src="script.js"></script>
+    </div>
+    </header>
 </body>
 
 </html>
